@@ -1,1 +1,62 @@
-sddfdfd
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="search">
+      <input id="city" type="text" placeholder="Enter city name" spellcheck="false" aria-label="City name">
+      <button id="btn" type="button" aria-label="Search"><i class="fa fa-search"></i></button>
+
+
+    </div>
+    <div class="weather">
+      <div class="weather-icon">
+        <img id="weather-icon" class="wicon" alt="weather icon" style="width:70px;" />
+        <p class="weather-type"></p>
+      </div>
+
+
+      <h1 class="temperature">33°c</h1>
+      <h2 class="city">New York</h2>
+
+      <div class="details">
+        <div class="col">
+          <i class="fa fa-tint"></i>
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <i class="fa fa-flag"></i>
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra">
+        <p class="sunrise"></p>
+        <p class="sunset"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
